@@ -170,8 +170,8 @@ if __name__=='__main__':
     # Check the results against given test case
 #    sampleresults()
     # Run the IBM model on a small data
-    ptable = runondata('training_short.eng','training_short.fra','test_short.eng','test_short.fra',\
-        'result_small.png',5)
+#    ptable = runondata('training_short.eng','training_short.fra','test_short.eng','test_short.fra',\
+#        'result_small.png',5)
     ptable = runondata('training.eng','training.fra','test.eng','test.fra',\
         'result_full.png',5)
     

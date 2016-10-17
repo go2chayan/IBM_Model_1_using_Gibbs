@@ -3,7 +3,9 @@ README
 
 I did it as a part of homework problem in the Statistical Speech and Language Processing course taught by 
 Prof Daniel Gildea (https://www.cs.rochester.edu/~gildea/) in Fall 2015. Here I've implemented Gibbs sampling for
-solving IBM model 1 alignment.
+solving IBM model 1 alignment. For more info, please refer to: 
+A Fast Fertility Hidden Markov Model for Word Alignment Using MCMC
+https://www.cs.rochester.edu/~gildea/pubs/zhao-gildea-emnlp10.pdf
 ==========================================================================================================
 
 Name: Md. Iftekhar Tanveer
