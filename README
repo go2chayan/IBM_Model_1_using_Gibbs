@@ -1,0 +1,51 @@
+README
+======
+
+I did it as a part of homework problem in the Statistical Speech and Language Processing course taught by 
+Prof Daniel Gildea (https://www.cs.rochester.edu/~gildea/) in Fall 2015. Here I've implemented Gibbs sampling for
+solving IBM model 1 alignment.
+==========================================================================================================
+
+Name: Md. Iftekhar Tanveer
+Email: itanveer@cs.rochester.edu  or  mtanveer@z.rochester.edu
+Course: CS448
+Homework 7: Implement Gibbs sampling-based EM for IBM Model 1
+
+
+************** Files ***************
+README: This document
+hw7.py: The original python script.
+training_short.eng: A short training dataset (~100 sentences) for quick check of the algorithm
+training_short.fra: A short training dataset (~100 sentences) for quick check of the algorithm
+test_short.eng: A short test dataset for quick check of the algorithm
+test_short.fra: A short test dataset for quick check of the algorithm
+result_small.png: Plot results on a short dataset
+result_Full.png: Plot results on the full dataset
+aer/test.output: output file generated for the test.f and test.e data
+
+Please NOTE:
+============
+This program assumes the following files are also present in the folder. Due to large size, I
+haven't included these files. Please copy these files before running the code.
+training.eng
+training.fra
+test.eng
+test.fra
+
+
+*********** Instructions ***********
+Just run the script hw7.py. It will run the following 3 modules one by one:
+
+1. runondata('training_short.eng','training_short.fra','test_short.eng','test_short.fra',\
+        'result_small.png',10)
+   This module runs the program on a small dataset. This is useful for quickly creating a plot of test and training likelihoods
+2. runondata('training.eng','training.fra','test.eng','test.fra','result_Full.png',20)
+   This module runs the program on the full dataset. This is the desired result but it takes long time to finish.
+
+
+************* Results **************
+It creates test.output file. 
+perl score_afile_sp.pl test.output test.wa.nullalign 
+precision:   171 /  7108 =   2.4%
+recall:       58 /  4038 =   1.4%
+aer:                     =    0.98
